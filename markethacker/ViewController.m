@@ -31,7 +31,7 @@
     [_reader setCompletionWithBlock:^(NSString *resultAsString) {
         [self dismissViewControllerAnimated:YES completion:^{
             NSLog(@"resulrAsString is %@", resultAsString);
-            [self loadGoodsDetail:@"201510240001"];
+            [self loadGoodsDetail:@"6920202888883"];
         }];
     }];
     [self presentViewController:_reader animated:YES completion:NULL];
@@ -57,8 +57,8 @@
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"preparing data");
     if ([segue.identifier compare:@"productDetailSegue"]== NSOrderedSame) {
+        [[NSUserDefaults standardUserDefaults] setObject:_scannedGoods forKey:@"currentGoods"];
         GoodsDetailViewController *goodsDetailController = (GoodsDetailViewController*) segue.destinationViewController;
-        goodsDetailController.goods = _scannedGoods;
     }
 }
 

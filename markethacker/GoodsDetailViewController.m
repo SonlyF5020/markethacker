@@ -18,10 +18,27 @@
 @end
 
 @implementation GoodsDetailViewController
+- (IBAction)addToShoppingCart:(id)sender {
+    NSMutableArray *shoppingCart = [[NSUserDefaults standardUserDefaults] objectForKey:@"shoppingCart"];
+    if (shoppingCart == nil) {
+        NSLog(@"%@", @"first time add goods");
+        NSMutableArray *initShoppingCart = [[NSMutableArray alloc] init];
+        [initShoppingCart addObject:_goods];
+        [[NSUserDefaults standardUserDefaults] setObject:initShoppingCart forKey:@"shoppingCart"];
+    } else {
+        NSLog(@"%@", @"add additional goods");
+        NSMutableArray *newShoppingCart = shoppingCart;
+        [newShoppingCart addObject:_goods];
+        [[NSUserDefaults standardUserDefaults] setObject:newShoppingCart forKey:@"shoppingCart"];
+    }
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [self performSegueWithIdentifier:@"shoppingCartSegue" sender:self];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"JSON is %@", _goods);
+    _goods = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentGoods"];
     _goodsName.text = [_goods objectForKey:@"name"];
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     _goodsPrice.text = [formatter stringFromNumber:[_goods objectForKey:@"price"]];
@@ -30,7 +47,6 @@
     NSString *avatarURL = [NSString stringWithFormat:@"https://markethacker.herokuapp.com%@",[avatarDictionary objectForKey:@"url"]];
     NSLog(@"avatar url here : %@", avatarURL);
     [_goodsPicture sd_setImageWithURL:[NSURL URLWithString:avatarURL] placeholderImage:[UIImage imageNamed:@"default_goods_picture"]];
-    
     
     // Do any additional setup after loading the view.
 }

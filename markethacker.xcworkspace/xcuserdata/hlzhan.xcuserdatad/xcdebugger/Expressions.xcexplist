@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[ShoppingCartTableViewController tableView:cellForRowAtIndexPath:]:ShoppingCartTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[ViewController prepareForSegue:sender:]:ViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -12,6 +20,9 @@
                value = "segue.identifier">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GoodsDetailViewController addToShoppingCart:]:GoodsDetailViewController.m">
       </ContextState>
       <ContextState
          contextName = "-[GoodsDetailViewController viewDidLoad]:GoodsDetailViewController.m">

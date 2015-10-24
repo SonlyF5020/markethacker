@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B11ED451BDB60D8006A59A7 /* GoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11ED441BDB60D8006A59A7 /* GoodsDetailViewController.m */; };
 		9B11ED471BDB67F7006A59A7 /* scan_code.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B11ED461BDB67F7006A59A7 /* scan_code.png */; };
+		9B11ED4A1BDBCFDB006A59A7 /* ShoppingCartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11ED491BDBCFDB006A59A7 /* ShoppingCartTableViewController.m */; };
 		9B6BE0791BDB3F2A00A43849 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE0781BDB3F2A00A43849 /* main.m */; };
 		9B6BE07C1BDB3F2A00A43849 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE07B1BDB3F2A00A43849 /* AppDelegate.m */; };
 		9B6BE07F1BDB3F2A00A43849 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE07E1BDB3F2A00A43849 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 		9B11ED431BDB60D8006A59A7 /* GoodsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetailViewController.h; sourceTree = "<group>"; };
 		9B11ED441BDB60D8006A59A7 /* GoodsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetailViewController.m; sourceTree = "<group>"; };
 		9B11ED461BDB67F7006A59A7 /* scan_code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scan_code.png; path = ../../../scan_code.png; sourceTree = "<group>"; };
+		9B11ED481BDBCFDB006A59A7 /* ShoppingCartTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartTableViewController.h; sourceTree = "<group>"; };
+		9B11ED491BDBCFDB006A59A7 /* ShoppingCartTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartTableViewController.m; sourceTree = "<group>"; };
 		9B6BE0731BDB3F2A00A43849 /* markethacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = markethacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6BE0771BDB3F2A00A43849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B6BE0781BDB3F2A00A43849 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,6 +116,8 @@
 				9B6BE0761BDB3F2A00A43849 /* Supporting Files */,
 				9B11ED431BDB60D8006A59A7 /* GoodsDetailViewController.h */,
 				9B11ED441BDB60D8006A59A7 /* GoodsDetailViewController.m */,
+				9B11ED481BDBCFDB006A59A7 /* ShoppingCartTableViewController.h */,
+				9B11ED491BDBCFDB006A59A7 /* ShoppingCartTableViewController.m */,
 			);
 			path = markethacker;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				9B11ED451BDB60D8006A59A7 /* GoodsDetailViewController.m in Sources */,
 				9B6BE07F1BDB3F2A00A43849 /* ViewController.m in Sources */,
 				9B6BE07C1BDB3F2A00A43849 /* AppDelegate.m in Sources */,
+				9B11ED4A1BDBCFDB006A59A7 /* ShoppingCartTableViewController.m in Sources */,
 				9B6BE0791BDB3F2A00A43849 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
