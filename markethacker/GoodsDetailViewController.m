@@ -7,8 +7,13 @@
 //
 
 #import "GoodsDetailViewController.h"
+#import "UIImageView+WebCache.h"
 
 @interface GoodsDetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *goodsName;
+@property (weak, nonatomic) IBOutlet UILabel *goodsPrice;
+@property (weak, nonatomic) IBOutlet UILabel *goodsDescription;
+@property (weak, nonatomic) IBOutlet UIImageView *goodsPicture;
 
 @end
 
@@ -16,6 +21,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"JSON is %@", _goods);
+    _goodsName.text = [_goods objectForKey:@"name"];
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    _goodsPrice.text = [formatter stringFromNumber:[_goods objectForKey:@"price"]];
+    _goodsDescription.text = [_goods objectForKey:@"desc"];
+    NSDictionary *avatarDictionary = [_goods objectForKey:@"avatar"];
+    NSString *avatarURL = [NSString stringWithFormat:@"https://markethacker.herokuapp.com%@",[avatarDictionary objectForKey:@"url"]];
+    NSLog(@"avatar url here : %@", avatarURL);
+    [_goodsPicture sd_setImageWithURL:[NSURL URLWithString:avatarURL] placeholderImage:[UIImage imageNamed:@"default_goods_picture"]];
+    
+    
     // Do any additional setup after loading the view.
 }
 

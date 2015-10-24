@@ -10,4 +10,6 @@
 
 @interface GoodsDetailViewController : UIViewController
 
+@property (weak, nonatomic) NSDictionary *goods;
+
 @end

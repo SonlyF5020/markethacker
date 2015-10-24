@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="SuperHeader" translatesAutoresizingMaskIntoConstraints="NO" id="7JO-ez-Emy">
-                                <rect key="frame" x="245" y="246" width="100" height="100"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SuperHeader" translatesAutoresizingMaskIntoConstraints="NO" id="7JO-ez-Emy">
+                                <rect key="frame" x="245" y="247" width="100" height="100"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2sP-We-T6F"/>
@@ -35,7 +35,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="光谷牛13超市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zez-Ak-koR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="光谷牛十三超市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zez-Ak-koR">
                                 <rect key="frame" x="126" y="38" width="349.5" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,6 +62,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="sOc-OL-GHT" kind="show" identifier="productDetailSegue" id="s5E-CA-eRv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="rxa-Nl-2YQ">
@@ -90,9 +93,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EgU-hp-qHK">
-                                <rect key="frame" x="165" y="80" width="240" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRq-TH-5tT">
                                 <rect key="frame" x="16" y="232" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -132,19 +132,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EgU-hp-qHK">
+                                <rect key="frame" x="165" y="80" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ZOb-a6-yLy" secondAttribute="trailing" constant="20" id="141-au-dbb"/>
                             <constraint firstAttribute="centerX" secondItem="ZOb-a6-yLy" secondAttribute="centerX" constant="-0.5" id="7yF-ad-OFc"/>
                             <constraint firstAttribute="centerX" secondItem="OHQ-sj-Kau" secondAttribute="centerX" constant="14" id="8sO-L0-Ljt"/>
-                            <constraint firstAttribute="centerX" secondItem="EgU-hp-qHK" secondAttribute="centerX" constant="144" id="QDm-Ph-gf4"/>
+                            <constraint firstAttribute="centerX" secondItem="EgU-hp-qHK" secondAttribute="centerX" id="QDm-Ph-gf4"/>
                             <constraint firstItem="ZOb-a6-yLy" firstAttribute="leading" secondItem="Ztg-yr-2Gc" secondAttribute="leadingMargin" constant="20" id="Vai-ZP-E1F"/>
                             <constraint firstItem="OHQ-sj-Kau" firstAttribute="top" secondItem="Q3e-kQ-RHV" secondAttribute="bottom" constant="10" id="dqE-KB-eJM"/>
                             <constraint firstItem="cZb-lY-NGE" firstAttribute="top" secondItem="TJo-65-vJj" secondAttribute="bottom" constant="40" id="qGi-Ty-MsL"/>
                             <constraint firstAttribute="centerX" secondItem="TJo-65-vJj" secondAttribute="centerX" id="sqE-4g-Ero"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goodsDescription" destination="ZOb-a6-yLy" id="lXq-Gh-Bsn"/>
+                        <outlet property="goodsName" destination="Xrl-NQ-1J7" id="cCK-kO-uHo"/>
+                        <outlet property="goodsPicture" destination="EgU-hp-qHK" id="hCh-QQ-j6a"/>
+                        <outlet property="goodsPrice" destination="G6b-qA-d63" id="atR-nh-RJE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YV-v0-BWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

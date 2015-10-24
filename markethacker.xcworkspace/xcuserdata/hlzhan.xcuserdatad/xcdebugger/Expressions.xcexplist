@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ViewController prepareForSegue:sender:]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "segue.identifier == @&quot;productDetailSegue&quot;">
+            </PersistentString>
+            <PersistentString
+               value = "segue.identifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GoodsDetailViewController viewDidLoad]:GoodsDetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[avatarDictionary objectForKey:@&quot;url&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "_goodsName.text">
+            </PersistentString>
+            <PersistentString
+               value = "6">
+            </PersistentString>
+            <PersistentString
+               value = "[_goods objectForKey:@&quot;price&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "[_goods objectForKey:@&quot;avatar&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "[[_goods objectForKey:@&quot;avatar&quot;] objectForKey:@&quot;url&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
