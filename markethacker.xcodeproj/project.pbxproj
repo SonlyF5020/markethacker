@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B11ED451BDB60D8006A59A7 /* GoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11ED441BDB60D8006A59A7 /* GoodsDetailViewController.m */; };
+		9B11ED471BDB67F7006A59A7 /* scan_code.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B11ED461BDB67F7006A59A7 /* scan_code.png */; };
 		9B6BE0791BDB3F2A00A43849 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE0781BDB3F2A00A43849 /* main.m */; };
 		9B6BE07C1BDB3F2A00A43849 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE07B1BDB3F2A00A43849 /* AppDelegate.m */; };
 		9B6BE07F1BDB3F2A00A43849 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE07E1BDB3F2A00A43849 /* ViewController.m */; };
@@ -14,6 +16,8 @@
 		9B6BE0841BDB3F2A00A43849 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6BE0831BDB3F2A00A43849 /* Images.xcassets */; };
 		9B6BE0871BDB3F2A00A43849 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6BE0851BDB3F2A00A43849 /* LaunchScreen.xib */; };
 		9B6BE0931BDB3F2A00A43849 /* markethackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE0921BDB3F2A00A43849 /* markethackerTests.m */; };
+		9B6BE09D1BDB460100A43849 /* qr_code.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6BE09C1BDB460100A43849 /* qr_code.png */; };
+		C422A79D0ACFDDCF8F6A5B39 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 598643A618120A01A48099F6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		598643A618120A01A48099F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3C2886D0239CC0CCDAB31E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9B11ED431BDB60D8006A59A7 /* GoodsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetailViewController.h; sourceTree = "<group>"; };
+		9B11ED441BDB60D8006A59A7 /* GoodsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetailViewController.m; sourceTree = "<group>"; };
+		9B11ED461BDB67F7006A59A7 /* scan_code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scan_code.png; path = ../../../scan_code.png; sourceTree = "<group>"; };
 		9B6BE0731BDB3F2A00A43849 /* markethacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = markethacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6BE0771BDB3F2A00A43849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B6BE0781BDB3F2A00A43849 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +49,8 @@
 		9B6BE08C1BDB3F2A00A43849 /* markethackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = markethackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6BE0911BDB3F2A00A43849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B6BE0921BDB3F2A00A43849 /* markethackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = markethackerTests.m; sourceTree = "<group>"; };
+		9B6BE09C1BDB460100A43849 /* qr_code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qr_code.png; path = ../../../qr_code.png; sourceTree = "<group>"; };
+		C5B64DF0414D6A0FF47A28EA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C422A79D0ACFDDCF8F6A5B39 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		005AFAFEB2DD39EA626E13F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				598643A618120A01A48099F6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B6BE06A1BDB3F2A00A43849 = {
 			isa = PBXGroup;
 			children = (
 				9B6BE0751BDB3F2A00A43849 /* markethacker */,
 				9B6BE08F1BDB3F2A00A43849 /* markethackerTests */,
 				9B6BE0741BDB3F2A00A43849 /* Products */,
+				AD93CDBC11DFA26951E9F885 /* Pods */,
+				005AFAFEB2DD39EA626E13F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +111,8 @@
 				9B6BE0831BDB3F2A00A43849 /* Images.xcassets */,
 				9B6BE0851BDB3F2A00A43849 /* LaunchScreen.xib */,
 				9B6BE0761BDB3F2A00A43849 /* Supporting Files */,
+				9B11ED431BDB60D8006A59A7 /* GoodsDetailViewController.h */,
+				9B11ED441BDB60D8006A59A7 /* GoodsDetailViewController.m */,
 			);
 			path = markethacker;
 			sourceTree = "<group>";
@@ -96,6 +120,8 @@
 		9B6BE0761BDB3F2A00A43849 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9B11ED461BDB67F7006A59A7 /* scan_code.png */,
+				9B6BE09C1BDB460100A43849 /* qr_code.png */,
 				9B6BE0771BDB3F2A00A43849 /* Info.plist */,
 				9B6BE0781BDB3F2A00A43849 /* main.m */,
 			);
@@ -119,6 +145,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AD93CDBC11DFA26951E9F885 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F3C2886D0239CC0CCDAB31E /* Pods.debug.xcconfig */,
+				C5B64DF0414D6A0FF47A28EA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B6BE0961BDB3F2A00A43849 /* Build configuration list for PBXNativeTarget "markethacker" */;
 			buildPhases = (
+				30D83D31FF19342FD79DD6D1 /* Check Pods Manifest.lock */,
 				9B6BE06F1BDB3F2A00A43849 /* Sources */,
 				9B6BE0701BDB3F2A00A43849 /* Frameworks */,
 				9B6BE0711BDB3F2A00A43849 /* Resources */,
+				83C13A45A3ED0967F932C204 /* Embed Pods Frameworks */,
+				F25876B5426BD0AAD9F745BB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,7 +239,9 @@
 			files = (
 				9B6BE0821BDB3F2A00A43849 /* Main.storyboard in Resources */,
 				9B6BE0871BDB3F2A00A43849 /* LaunchScreen.xib in Resources */,
+				9B11ED471BDB67F7006A59A7 /* scan_code.png in Resources */,
 				9B6BE0841BDB3F2A00A43849 /* Images.xcassets in Resources */,
+				9B6BE09D1BDB460100A43849 /* qr_code.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,11 +254,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30D83D31FF19342FD79DD6D1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83C13A45A3ED0967F932C204 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F25876B5426BD0AAD9F745BB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B6BE06F1BDB3F2A00A43849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B11ED451BDB60D8006A59A7 /* GoodsDetailViewController.m in Sources */,
 				9B6BE07F1BDB3F2A00A43849 /* ViewController.m in Sources */,
 				9B6BE07C1BDB3F2A00A43849 /* AppDelegate.m in Sources */,
 				9B6BE0791BDB3F2A00A43849 /* main.m in Sources */,
@@ -345,6 +434,7 @@
 		};
 		9B6BE0971BDB3F2A00A43849 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3C2886D0239CC0CCDAB31E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = markethacker/Info.plist;
@@ -355,6 +445,7 @@
 		};
 		9B6BE0981BDB3F2A00A43849 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5B64DF0414D6A0FF47A28EA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = markethacker/Info.plist;
@@ -416,6 +507,7 @@
 				9B6BE0981BDB3F2A00A43849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B6BE0991BDB3F2A00A43849 /* Build configuration list for PBXNativeTarget "markethackerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +516,7 @@
 				9B6BE09B1BDB3F2A00A43849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

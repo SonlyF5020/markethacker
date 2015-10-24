@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GoodsDetailViewController.h
 //  markethacker
 //
 //  Created by Honglai Zhan on 15/10/24.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "QRCodeReaderViewController.h"
 
-@interface ViewController : UIViewController<QRCodeReaderDelegate>
-
+@interface GoodsDetailViewController : UIViewController
 
 @end
-
