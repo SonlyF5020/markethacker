@@ -10,6 +10,8 @@
 		9B11ED451BDB60D8006A59A7 /* GoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11ED441BDB60D8006A59A7 /* GoodsDetailViewController.m */; };
 		9B11ED471BDB67F7006A59A7 /* scan_code.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B11ED461BDB67F7006A59A7 /* scan_code.png */; };
 		9B11ED4A1BDBCFDB006A59A7 /* ShoppingCartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11ED491BDBCFDB006A59A7 /* ShoppingCartTableViewController.m */; };
+		9B11ED4D1BDBE509006A59A7 /* ConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11ED4C1BDBE509006A59A7 /* ConfirmViewController.m */; };
+		9B11ED4F1BDC41FB006A59A7 /* loading_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9B11ED4E1BDC41FB006A59A7 /* loading_gif.gif */; };
 		9B6BE0791BDB3F2A00A43849 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE0781BDB3F2A00A43849 /* main.m */; };
 		9B6BE07C1BDB3F2A00A43849 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE07B1BDB3F2A00A43849 /* AppDelegate.m */; };
 		9B6BE07F1BDB3F2A00A43849 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE07E1BDB3F2A00A43849 /* ViewController.m */; };
@@ -39,6 +41,9 @@
 		9B11ED461BDB67F7006A59A7 /* scan_code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scan_code.png; path = ../../../scan_code.png; sourceTree = "<group>"; };
 		9B11ED481BDBCFDB006A59A7 /* ShoppingCartTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartTableViewController.h; sourceTree = "<group>"; };
 		9B11ED491BDBCFDB006A59A7 /* ShoppingCartTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartTableViewController.m; sourceTree = "<group>"; };
+		9B11ED4B1BDBE509006A59A7 /* ConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmViewController.h; sourceTree = "<group>"; };
+		9B11ED4C1BDBE509006A59A7 /* ConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmViewController.m; sourceTree = "<group>"; };
+		9B11ED4E1BDC41FB006A59A7 /* loading_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = loading_gif.gif; path = ../../../loading_gif.gif; sourceTree = "<group>"; };
 		9B6BE0731BDB3F2A00A43849 /* markethacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = markethacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6BE0771BDB3F2A00A43849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B6BE0781BDB3F2A00A43849 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +123,8 @@
 				9B11ED441BDB60D8006A59A7 /* GoodsDetailViewController.m */,
 				9B11ED481BDBCFDB006A59A7 /* ShoppingCartTableViewController.h */,
 				9B11ED491BDBCFDB006A59A7 /* ShoppingCartTableViewController.m */,
+				9B11ED4B1BDBE509006A59A7 /* ConfirmViewController.h */,
+				9B11ED4C1BDBE509006A59A7 /* ConfirmViewController.m */,
 			);
 			path = markethacker;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 		9B6BE0761BDB3F2A00A43849 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9B11ED4E1BDC41FB006A59A7 /* loading_gif.gif */,
 				9B11ED461BDB67F7006A59A7 /* scan_code.png */,
 				9B6BE09C1BDB460100A43849 /* qr_code.png */,
 				9B6BE0771BDB3F2A00A43849 /* Info.plist */,
@@ -244,6 +252,7 @@
 			files = (
 				9B6BE0821BDB3F2A00A43849 /* Main.storyboard in Resources */,
 				9B6BE0871BDB3F2A00A43849 /* LaunchScreen.xib in Resources */,
+				9B11ED4F1BDC41FB006A59A7 /* loading_gif.gif in Resources */,
 				9B11ED471BDB67F7006A59A7 /* scan_code.png in Resources */,
 				9B6BE0841BDB3F2A00A43849 /* Images.xcassets in Resources */,
 				9B6BE09D1BDB460100A43849 /* qr_code.png in Resources */,
@@ -315,6 +324,7 @@
 				9B11ED451BDB60D8006A59A7 /* GoodsDetailViewController.m in Sources */,
 				9B6BE07F1BDB3F2A00A43849 /* ViewController.m in Sources */,
 				9B6BE07C1BDB3F2A00A43849 /* AppDelegate.m in Sources */,
+				9B11ED4D1BDBE509006A59A7 /* ConfirmViewController.m in Sources */,
 				9B11ED4A1BDBCFDB006A59A7 /* ShoppingCartTableViewController.m in Sources */,
 				9B6BE0791BDB3F2A00A43849 /* main.m in Sources */,
 			);

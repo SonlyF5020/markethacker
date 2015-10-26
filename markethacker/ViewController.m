@@ -14,6 +14,8 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) NSDictionary *scannedGoods;
+@property (weak, nonatomic) IBOutlet UIImageView *scanButton;
+@property (weak, nonatomic) IBOutlet UILabel *homePageLabel;
 
 @end
 
@@ -64,12 +66,16 @@
 
 - (void) loadGoodsDetail:(NSString *)goodsId {
     NSLog(@"goodsId is %@", goodsId);
+    _homePageLabel.text = @"子弹说，让我再灰一会";
+    [_scanButton setImage:[UIImage imageNamed:@"ShoppingHeader"]];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSString *loadUrl = [NSString stringWithFormat:@"https://markethacker.herokuapp.com/products/%@",goodsId];
     NSLog(@"%@", loadUrl);
     [manager GET:loadUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject){
         NSLog(@"JSON response: %@", responseObject);
         _scannedGoods = responseObject;
+        _homePageLabel.text = @"你与买买买之间只有一个APP的距离";
+        [_scanButton setImage:[UIImage imageNamed:@"SuperHeader"]];
         [self performSegueWithIdentifier:@"productDetailSegue" sender:self];
     }failure:^(AFHTTPRequestOperation *operation, NSError *error){
         NSLog(@"Error: %@", error);

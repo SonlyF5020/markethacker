@@ -19,6 +19,7 @@
 
 @implementation GoodsDetailViewController
 - (IBAction)addToShoppingCart:(id)sender {
+    _goods = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentGoods"];
     NSMutableArray *shoppingCart = [[NSUserDefaults standardUserDefaults] objectForKey:@"shoppingCart"];
     if (shoppingCart == nil) {
         NSLog(@"%@", @"first time add goods");
